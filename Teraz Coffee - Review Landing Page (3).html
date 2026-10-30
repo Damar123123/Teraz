@@ -44,16 +44,8 @@
             0%, 100% { transform: translateY(0px) rotate(0deg); }
             50% { transform: translateY(-8px) rotate(2deg); }
         }
-        @keyframes steam {
-            0% { transform: translateY(0) scaleX(1); opacity: 0; }
-            50% { opacity: 0.6; }
-            100% { transform: translateY(-15px) scaleX(1.3); opacity: 0; }
-        }
         .animate-float {
             animation: float 4s ease-in-out infinite;
-        }
-        .animate-steam {
-            animation: steam 2.5s infinite ease-out;
         }
         /* Background decorative subtle grid */
         .bg-pattern {
@@ -71,63 +63,14 @@
     <!-- Main Container -->
     <main class="w-full max-w-md my-auto flex flex-col items-center text-center">
         
-        <!-- Custom Vector Logo Container -->
+        <!-- Image Logo Container -->
         <div class="relative mb-6 group">
             <!-- Glow Effect -->
             <div class="absolute -inset-1.5 bg-gradient-to-r from-coffee-400 to-coffee-700 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
             
             <!-- Logo Box -->
-            <div class="relative w-40 h-40 sm:w-48 sm:h-48 bg-coffee-900 border-2 border-coffee-400/40 rounded-2xl p-3 flex items-center justify-center shadow-2xl shadow-coffee-900/20 overflow-hidden">
-                <!-- SVG Illustration based on uploaded logo (Man wearing cap holding coffee mug) -->
-                <svg viewBox="0 0 300 240" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full text-white drop-shadow-md">
-                    <g fill="currentColor">
-                        <!-- Cap -->
-                        <path d="M115 42C128 35 158 35 172 42C182 47 186 58 186 68L120 72C116 62 110 50 115 42Z"/>
-                        <path d="M120 40C135 25 165 25 180 40C188 48 190 60 188 72H112C110 60 112 48 120 40Z" fill="#FFFFFF"/>
-                        <!-- Cap Visor / Back Strap Feature -->
-                        <path d="M175 48C195 50 205 58 208 64H182C180 58 178 52 175 48Z" fill="#FFFFFF"/>
-                        
-                        <!-- Hair & Ear -->
-                        <path d="M110 70C108 78 112 85 116 88C114 80 115 74 120 70H110Z"/>
-                        
-                        <!-- Head & Face Outline -->
-                        <path d="M122 70C135 68 165 68 178 70C182 82 180 102 170 115C160 125 140 125 130 115C120 102 118 82 122 70Z" fill="#FFFFFF"/>
-                        <!-- Eyebrows & Eyes Looking Down -->
-                        <path d="M132 82C138 82 142 85 142 87C138 86 134 86 132 82Z"/>
-                        <path d="M158 82C164 82 168 85 168 87C164 86 160 86 158 82Z"/>
-                        <circle cx="137" cy="90" r="2.5"/>
-                        <circle cx="163" cy="90" r="2.5"/>
-                        <!-- Nose & Mouth -->
-                        <path d="M148 90C150 96 147 100 144 102" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M140 110C146 113 154 113 160 110" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                        
-                        <!-- Neck & T-Shirt Collar -->
-                        <path d="M136 120L130 135H170L164 120Z" fill="#FFFFFF"/>
-                        <path d="M120 135C138 145 162 145 180 135L202 155C208 170 205 195 198 208H102C95 195 92 170 98 155L120 135Z"/>
-
-                        <!-- Arms & Sleeves -->
-                        <!-- Left Arm holding mug -->
-                        <path d="M98 155L80 185C78 195 85 205 95 202L110 198L118 178L102 165Z" fill="#FFFFFF"/>
-                        <!-- Right Arm resting on knee -->
-                        <path d="M202 155L218 185C222 198 215 210 200 215L178 220L170 202L195 170Z" fill="#FFFFFF"/>
-
-                        <!-- Coffee Mug -->
-                        <rect x="135" y="160" width="28" height="32" rx="4" fill="#FFFFFF" stroke="currentColor" stroke-width="3"/>
-                        <path d="M163 167C170 167 172 175 163 183" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round"/>
-                        <path d="M138 163C145 165 153 165 160 163" stroke="currentColor" stroke-width="2"/>
-
-                        <!-- Hands & Fingers -->
-                        <path d="M125 168C128 165 136 168 136 175C133 178 127 178 125 168Z" fill="#FFFFFF"/>
-                        <path d="M168 215C163 220 152 225 145 220C142 215 148 208 155 208L168 215Z" fill="#FFFFFF"/>
-
-                        <!-- Legs / Crouching Stance -->
-                        <path d="M68 195C80 180 102 185 110 210L82 222C70 220 65 208 68 195Z"/>
-                        <path d="M232 195C220 180 198 185 190 210L218 222C230 220 235 208 232 195Z"/>
-                        
-                        <!-- Ground Line -->
-                        <rect x="50" y="222" width="200" height="4" rx="2"/>
-                    </g>
-                </svg>
+            <div class="relative w-40 h-40 sm:w-48 sm:h-48 bg-coffee-900 border-2 border-coffee-400/40 rounded-2xl p-2 flex items-center justify-center shadow-2xl shadow-coffee-900/20 overflow-hidden">
+                <img src="Teraz.jpeg" alt="Teraz Coffee Logo" class="w-full h-full object-cover rounded-xl">
             </div>
         </div>
 
